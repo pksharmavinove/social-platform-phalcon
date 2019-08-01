@@ -1,0 +1,934 @@
+{
+	"info": {
+		"_postman_id": "4e9f9c67-0d07-4dc2-8999-7ac6953472d8",
+		"name": "Social Media Platform Phalcon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "/posts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ZpriqkpTBWsUrbMfp8ToSoO3Ko35vdLGrrK9a+/o6JiUDfWzSGLcYkzsUmCo1JuoUx77+AYPavK3BEdrWPWCieqvctPliHaEaBlGTAO1RgT03HWttTloldn/LCBAzZBT7XU5escLJK+UexWFInZ6K0iNVHy9FPyqjwz7rMamGr6tFZQj0sCRxndwi6fAqNcc98yVqjwKK7i7lvbIUMCpjzacLwtRN8ycXeAlrJC86Ea5Y9FQKCK1Ea0G8RMOmUJHWPheYAKmNJwgqsLaW6ongA3s08Qv2h9+z2H8nJ4NMzqbm3KBBVQHzOX4fkL8Qn09cpWhjgzk3oXjUBl2UFmnilR3uEspweX+UOHwyOk3w/k2TRjMScZxCWmnoH4yqQEZ4q9aRTAjJzp3v07X44fSwVo7SXVi8pPRjsYolZx7mZ1gM04shHAAhMxMEr0s4TfKODOeMputTpIVm/6YUohvvHKzB14GNfYLdARX2wrTc5a2BXD7eURmFFomOaYfByX3IKNcjLb7oVoGsqn34yc4qNeqJvSBUXfVh8oRbiE9frnQy4QGTpEfGl9Kczd2R2LF0bry9eP4b2X3fB9gvvGZ4EUSoC7r9Q6xwMJWI/U1x9bPYK85lIls0IXrNdY/NBrd2yDbuHq97smHYvyWbXJOBBO6UHIEh1oY1aRz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/social-media-platform/posts?limit=5&offset=0&sort=title&order=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"social-media-platform",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "sort",
+									"value": "title"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								}
+							]
+						},
+						"description": "Cities list"
+					},
+					"response": []
+				},
+				{
+					"name": "/posts/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ZpriqkpTBWsUrbMfp8ToSoO3Ko35vdLGrrK9a+/o6JiUDfWzSGLcYkzsUmCo1JuoUx77+AYPavK3BEdrWPWCieqvctPliHaEaBlGTAO1RgT03HWttTloldn/LCBAzZBT7XU5escLJK+UexWFInZ6K0iNVHy9FPyqjwz7rMamGr6tFZQj0sCRxndwi6fAqNcc98yVqjwKK7i7lvbIUMCpjzacLwtRN8ycXeAlrJC86Ea5Y9FQKCK1Ea0G8RMOmUJHWPheYAKmNJwgqsLaW6ongA3s08Qv2h9+z2H8nJ4NMzqbm3KBBVQHzOX4fkL8Qn09cpWhjgzk3oXjUBl2UFmnilR3uEspweX+UOHwyOk3w/k2TRjMScZxCWmnoH4yqQEZ4q9aRTAjJzp3v07X44fSwVo7SXVi8pPRjsYolZx7mZ1gM04shHAAhMxMEr0s4TfKODOeMputTpIVm/6YUohvvHKzB14GNfYLdARX2wrTc5a2BXD7eURmFFomOaYfByX3IKNcjLb7oVoGsqn34yc4qNeqJvSBUXfVh8oRbiE9frnQy4QGTpEfGl9Kczd2R2LF0bry9eP4b2X3fB9gvvGZ4EUSoC7r9Q6xwMJWI/U1x9bPYK85lIls0IXrNdY/NBrd2yDbuHq97smHYvyWbXJOBBO6UHIEh1oY1aRz"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Floridablanca35",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "description",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "latitude",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "longitude",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/social-media-platform/posts/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"social-media-platform",
+								"posts",
+								"create"
+							]
+						},
+						"description": "Create city"
+					},
+					"response": []
+				},
+				{
+					"name": "/posts/get/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ZpriqkpTBWsUrbMfp8ToSoO3Ko35vdLGrrK9a+/o6JiUDfWzSGLcYkzsUmCo1JuoUx77+AYPavK3BEdrWPWCieqvctPliHaEaBlGTAO1RgT03HWttTloldn/LCBAzZBT7XU5escLJK+UexWFInZ6K0iNVHy9FPyqjwz7rMamGr6tFZQj0sCRxndwi6fAqNcc98yVqjwKK7i7lvbIUMCpjzacLwtRN8ycXeAlrJC86Ea5Y9FQKCK1Ea0G8RMOmUJHWPheYAKmNJwgqsLaW6ongA3s08Qv2h9+z2H8nJ4NMzqbm3KBBVQHzOX4fkL8Qn09cpWhjgzk3oXjUBl2UFmnilR3uEspweX+UOHwyOk3w/k2TRjMScZxCWmnoH4yqQEZ4q9aRTAjJzp3v07X44fSwVo7SXVi8pPRjsYolZx7mZ1gM04shHAAhMxMEr0s4TfKODOeMputTpIVm/6YUohvvHKzB14GNfYLdARX2wrTc5a2BXD7eURmFFomOaYfByX3IKNcjLb7oVoGsqn34yc4qNeqJvSBUXfVh8oRbiE9frnQy4QGTpEfGl9Kczd2R2LF0bry9eP4b2X3fB9gvvGZ4EUSoC7r9Q6xwMJWI/U1x9bPYK85lIls0IXrNdY/NBrd2yDbuHq97smHYvyWbXJOBBO6UHIEh1oY1aRz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/social-media-platform/posts/get/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"social-media-platform",
+								"posts",
+								"get",
+								"6"
+							]
+						},
+						"description": "Get post info"
+					},
+					"response": []
+				},
+				{
+					"name": "/posts/update/{id}",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Floridablanca",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Colombia",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/social-media-platform/posts/update/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"social-media-platform",
+								"posts",
+								"update",
+								"7"
+							]
+						},
+						"description": "Update city info"
+					},
+					"response": []
+				},
+				{
+					"name": "/posts/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost/social-media-platform/posts/delete/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"social-media-platform",
+								"posts",
+								"delete",
+								"8"
+							]
+						},
+						"description": "Delete city"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "351fff86-ad43-4d2c-bfd7-f87f56c688dd",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "c96441b2-bfe7-47c5-a198-2d9e988e95fa",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Post Remarks",
+			"item": [
+				{
+					"name": "/postremarks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ZpriqkpTBWsUrbMfp8ToSoO3Ko35vdLGrrK9a+/o6JiUDfWzSGLcYkzsUmCo1JuoUx77+AYPavK3BEdrWPWCieqvctPliHaEaBlGTAO1RgT03HWttTloldn/LCBAzZBT7XU5escLJK+UexWFInZ6K0iNVHy9FPyqjwz7rMamGr6tFZQj0sCRxndwi6fAqNcc98yVqjwKK7i7lvbIUMCpjzacLwtRN8ycXeAlrJC86Ea5Y9FQKCK1Ea0G8RMOmUJHWPheYAKmNJwgqsLaW6ongA3s08Qv2h9+z2H8nJ4NMzqbm3KBBVQHzOX4fkL8Qn09cpWhjgzk3oXjUBl2UFmnilR3uEspweX+UOHwyOk3w/k2TRjMScZxCWmnoH4yqQEZ4q9aRTAjJzp3v07X44fSwVo7SXVi8pPRjsYolZx7mZ1gM04shHAAhMxMEr0s4TfKODOeMputTpIVm/6YUohvvHKzB14GNfYLdARX2wrTc5a2BXD7eURmFFomOaYfByX3IKNcjLb7oVoGsqn34yc4qNeqJvSBUXfVh8oRbiE9frnQy4QGTpEfGl9Kczd2R2LF0bry9eP4b2X3fB9gvvGZ4EUSoC7r9Q6xwMJWI/U1x9bPYK85lIls0IXrNdY/NBrd2yDbuHq97smHYvyWbXJOBBO6UHIEh1oY1aRz"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/social-media-platform/postremarks?limit=5&offset=0&sort=id&order=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"social-media-platform",
+								"postremarks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "sort",
+									"value": "id"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								}
+							]
+						},
+						"description": "Cities list"
+					},
+					"response": []
+				},
+				{
+					"name": "/postremarks/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ZpriqkpTBWsUrbMfp8ToSoO3Ko35vdLGrrK9a+/o6JiUDfWzSGLcYkzsUmCo1JuoUx77+AYPavK3BEdrWPWCieqvctPliHaEaBlGTAO1RgT03HWttTloldn/LCBAzZBT7XU5escLJK+UexWFInZ6K0iNVHy9FPyqjwz7rMamGr6tFZQj0sCRxndwi6fAqNcc98yVqjwKK7i7lvbIUMCpjzacLwtRN8ycXeAlrJC86Ea5Y9FQKCK1Ea0G8RMOmUJHWPheYAKmNJwgqsLaW6ongA3s08Qv2h9+z2H8nJ4NMzqbm3KBBVQHzOX4fkL8Qn09cpWhjgzk3oXjUBl2UFmnilR3uEspweX+UOHwyOk3w/k2TRjMScZxCWmnoH4yqQEZ4q9aRTAjJzp3v07X44fSwVo7SXVi8pPRjsYolZx7mZ1gM04shHAAhMxMEr0s4TfKODOeMputTpIVm/6YUohvvHKzB14GNfYLdARX2wrTc5a2BXD7eURmFFomOaYfByX3IKNcjLb7oVoGsqn34yc4qNeqJvSBUXfVh8oRbiE9frnQy4QGTpEfGl9Kczd2R2LF0bry9eP4b2X3fB9gvvGZ4EUSoC7r9Q6xwMJWI/U1x9bPYK85lIls0IXrNdY/NBrd2yDbuHq97smHYvyWbXJOBBO6UHIEh1oY1aRz"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "post_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "sdlkfjskldfjklsjdfsdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/social-media-platform/postremarks/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"social-media-platform",
+								"postremarks",
+								"create"
+							]
+						},
+						"description": "Create city"
+					},
+					"response": []
+				},
+				{
+					"name": "/postremarks/get/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/social-media-platform/postremarks/get/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"social-media-platform",
+								"postremarks",
+								"get",
+								"1"
+							]
+						},
+						"description": "Get post info"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "351fff86-ad43-4d2c-bfd7-f87f56c688dd",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "c96441b2-bfe7-47c5-a198-2d9e988e95fa",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Index",
+			"item": [
+				{
+					"name": "/authenticate/",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "test123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "pks0203",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4xMjM0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/social-media-platform/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"social-media-platform",
+								"authenticate"
+							]
+						},
+						"description": "User authentication"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "/profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://api.myproject.local/profile",
+							"protocol": "http",
+							"host": [
+								"api",
+								"myproject",
+								"local"
+							],
+							"path": [
+								"profile"
+							]
+						},
+						"description": "User profile"
+					},
+					"response": []
+				},
+				{
+					"name": "/profile/update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstname",
+									"value": "Other name",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Lastname",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "1979-12-11",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "5345345",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "34534534",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Calle15",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Bogotá",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "asd@asd.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.myproject.local/profile/update",
+							"protocol": "http",
+							"host": [
+								"api",
+								"myproject",
+								"local"
+							],
+							"path": [
+								"profile",
+								"update"
+							]
+						},
+						"description": "Updates profile"
+					},
+					"response": []
+				},
+				{
+					"name": "/profile/change-password",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "current_password",
+									"value": "admin1234",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "admin1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.myproject.local/profile/change-password",
+							"protocol": "http",
+							"host": [
+								"api",
+								"myproject",
+								"local"
+							],
+							"path": [
+								"profile",
+								"change-password"
+							]
+						},
+						"description": "Updates password"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "/users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://api.myproject.local/users?",
+							"protocol": "http",
+							"host": [
+								"api",
+								"myproject",
+								"local"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "firstname, lastname",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "asc",
+									"disabled": true
+								},
+								{
+									"key": "filter",
+									"value": "{\"user_phone\":60}",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Users list"
+					},
+					"response": []
+				},
+				{
+					"name": "/users/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "another@email.com",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "test123",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admintest",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "My name",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "My last name",
+									"type": "text"
+								},
+								{
+									"key": "level",
+									"value": "Superuser",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12312312",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "31312312",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Calle 10",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Bogotá",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Colombia",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "1979-01-01",
+									"type": "text"
+								},
+								{
+									"key": "authorised",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.myproject.local/users/create",
+							"protocol": "http",
+							"host": [
+								"api",
+								"myproject",
+								"local"
+							],
+							"path": [
+								"users",
+								"create"
+							]
+						},
+						"description": "Create user"
+					},
+					"response": []
+				},
+				{
+					"name": "/users/get/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://api.myproject.local/users/get/1",
+							"protocol": "http",
+							"host": [
+								"api",
+								"myproject",
+								"local"
+							],
+							"path": [
+								"users",
+								"get",
+								"1"
+							]
+						},
+						"description": "Get user info"
+					},
+					"response": []
+				},
+				{
+					"name": "/users/update/{id}",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "onemore@email.com",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Other name",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Other lastname",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "1979-01-01",
+									"type": "text"
+								},
+								{
+									"key": "level",
+									"value": "Superuser",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "4534534",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "2425235",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Calle 12",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Bogotá",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Colombia",
+									"type": "text"
+								},
+								{
+									"key": "authorised",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.myproject.local/users/update/1",
+							"protocol": "http",
+							"host": [
+								"api",
+								"myproject",
+								"local"
+							],
+							"path": [
+								"users",
+								"update",
+								"1"
+							]
+						},
+						"description": "Update user info"
+					},
+					"response": []
+				},
+				{
+					"name": "/users/change-password/{id}",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "new_password",
+									"value": "admin1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://api.myproject.local/users/change-password/2",
+							"protocol": "http",
+							"host": [
+								"api",
+								"myproject",
+								"local"
+							],
+							"path": [
+								"users",
+								"change-password",
+								"2"
+							]
+						},
+						"description": "Update user password"
+					},
+					"response": []
+				},
+				{
+					"name": "/users/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{authToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.myproject.local/users/delete/2",
+							"protocol": "http",
+							"host": [
+								"api",
+								"myproject",
+								"local"
+							],
+							"path": [
+								"users",
+								"delete",
+								"2"
+							]
+						},
+						"description": "Delete user"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
