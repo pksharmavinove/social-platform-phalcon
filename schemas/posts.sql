@@ -19,8 +19,7 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `longitude` varchar(50) DEFAULT NULL,
   `created_at` varchar(20) NOT NULL,
   `user_id` int(10) unsigned,
-  PRIMARY KEY (`id`)
-  #CONSTRAINT `fk_user_id` FOREIGN KEY (user_id) REFERENCES user(id)
+  PRIMARY KEY (`id`) 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
   

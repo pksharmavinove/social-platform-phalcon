@@ -4,7 +4,9 @@ class PostsController extends ControllerBase
 {
 
     /**
-     * Index Method
+     * Index Method This loads all data based on User Role
+     * @param post request
+     * 
      */
     public function index()
     {   
@@ -77,7 +79,8 @@ class PostsController extends ControllerBase
     }
 
     /**
-     * 
+     * Fetch Single Record 
+     * @param int id
      */
     public function get($id)
     {
@@ -87,7 +90,8 @@ class PostsController extends ControllerBase
     }
 
     /**
-     * 
+     *  Update a single record
+     *  @param int id
      */
     public function update($id)
     {
@@ -102,7 +106,8 @@ class PostsController extends ControllerBase
     }
 
     /**
-     * 
+     * Destroy Single Record
+     * @param int id
      */
     public function delete($id)
     {
@@ -117,6 +122,7 @@ class PostsController extends ControllerBase
 
     /**
      * Private Methods
+     * Save Post Data to DB
      */
 
     private function createPost($title, $description, $latitude, $longitude, $created_at, $user_id)
